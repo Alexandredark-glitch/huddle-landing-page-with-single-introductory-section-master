@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution>a { color: black; 
+    text-decoration: none;}
+
+body {
+    color: whitesmoke;
+    font-family: "Open Sans";
+    background: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color:  hsl(257, 40%, 49%);
+    fill: 1;
+}
+header  {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: 2rem;
+}
+h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2rem;
+    text-wrap: balance;
+}
+p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8rem;
+    max-width: 50ch;
+   
+}
+.flexing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-left: 5rem;
+}
+.special {
+    padding: 2rem;
+    margin-bottom: 6rem;
+}
+button {
+    margin-top: 0.3rem;
+    width: fit-content;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
+    background-color: whitesmoke;
+    color: hsl(257, 40%, 49%);
+    border-radius: calc(infinity * 1px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+
+}
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-right: 5rem;
+
+}
+.icons i {
+    cursor: pointer;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
+}
+.icons i:hover {
+    cursor: pointer;
+    color:  hsl(300, 69%, 71%);
+}
+
+@media (max-width: 940px) {
+h1 {
+    font-size: 1rem;
+}
+p {
+    font-size: 0.7rem;
+}
+}
+@media (max-width: 768px) {
+    body {
+        background: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-color:  hsl(257, 40%, 49%);
+        fill: 1;
+        
+    }
+    header  {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+.flexing {
+    flex-direction: column;
+    margin-left: 0;
+   
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-wrap: balance;
+}
+p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 200ch;
+}
+button {
+    display: block;
+    padding-inline: 5rem;
+    padding-block: 0.9rem;
+    margin-inline: auto;
+    
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-inline: 0;
+    
+}
+}
